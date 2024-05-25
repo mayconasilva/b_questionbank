@@ -1,4 +1,4 @@
-package com.profmayconsilva.questionbank.core.exceptions;
+package com.profmayconsilva.questionbank.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

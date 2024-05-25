@@ -1,4 +1,4 @@
-package com.profmayconsilva.questionbank.core.exceptions;
+package com.profmayconsilva.questionbank.exceptions;
 
 public class InvalidDataException extends Exception {
     public InvalidDataException(String message) {
