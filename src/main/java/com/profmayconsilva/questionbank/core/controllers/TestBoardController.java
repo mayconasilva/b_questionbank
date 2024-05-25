@@ -2,15 +2,13 @@ package com.profmayconsilva.questionbank.core.controllers;
 
 import com.profmayconsilva.questionbank.core.dtos.TestBoardRequestDTO;
 import com.profmayconsilva.questionbank.core.dtos.TestBoardResponseDTO;
-import com.profmayconsilva.questionbank.core.exceptions.InvalidDataException;
+import com.profmayconsilva.questionbank.exceptions.InvalidDataException;
 import com.profmayconsilva.questionbank.core.repositories.TestBoardRepository;
 import com.profmayconsilva.questionbank.core.services.TestBoardService;
 import org.springframework.data.domain.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("api/test-board")
@@ -29,7 +27,7 @@ public class TestBoardController {
         return ResponseEntity.ok(testBoardPage);
     }
 
-    @PostMapping("new")
+    @PostMapping
     public ResponseEntity<String> createNewTestBoard(@RequestBody TestBoardRequestDTO data){
         try {
             testBoardService.createNewTestBoard(data);

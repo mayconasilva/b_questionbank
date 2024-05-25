@@ -3,7 +3,7 @@ package com.profmayconsilva.questionbank.core.services;
 import com.profmayconsilva.questionbank.core.dtos.TestBoardRequestDTO;
 import com.profmayconsilva.questionbank.core.dtos.TestBoardResponseDTO;
 import com.profmayconsilva.questionbank.core.entities.TestBoard;
-import com.profmayconsilva.questionbank.core.exceptions.InvalidDataException;
+import com.profmayconsilva.questionbank.exceptions.InvalidDataException;
 import com.profmayconsilva.questionbank.core.repositories.TestBoardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

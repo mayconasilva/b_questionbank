@@ -24,9 +24,7 @@ public class TestBoard {
     private String testBoardName;
     @Column(nullable = false, unique = true)
     private String testBoardAcronym;
-    private String createdBy;
     private LocalDateTime createdDate;
-    private String lastModifiedBy;
     private LocalDateTime lastModifiedDate;
 
     @OneToMany
