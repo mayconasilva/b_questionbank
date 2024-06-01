@@ -19,7 +19,7 @@ public class TestBoardController {
     @Autowired
     private TestBoardService testBoardService;
 
-    @GetMapping("all")
+    @GetMapping
     public ResponseEntity<Page<TestBoardResponseDTO>> getAllTestBoards(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
