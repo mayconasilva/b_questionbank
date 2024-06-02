@@ -34,15 +34,12 @@ public class Question {
     private String discipline;
     @Column(nullable = false)
     private String content;
-    @Lob
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String statement;
     @Column(nullable = false)
     private String answer;
-    @Lob
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String solution;
-
     private LocalDateTime createdDate;
     private LocalDateTime lastModifiedDate;
 

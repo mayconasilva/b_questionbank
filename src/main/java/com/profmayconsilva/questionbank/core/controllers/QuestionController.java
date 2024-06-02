@@ -22,7 +22,7 @@ public class QuestionController {
     public ResponseEntity<String> createQuestion(@RequestBody QuestionRequestDTO requestDTO) {
         try {
             questionService.createNewQuestion(requestDTO);
-            return ResponseEntity.status(HttpStatus.CREATED).body("Question created successfully.");
+            return ResponseEntity.status(HttpStatus.OK).body("Question created successfully.");
         } catch (InvalidDataException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
         } catch (Exception e) {
